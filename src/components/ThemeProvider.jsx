@@ -3,8 +3,8 @@ import { createGlobalStyle, ThemeProvider as StyledThemeProvider } from 'styled-
 
 const GlobalStyle = createGlobalStyle`
   body {
-    background-color: ${props => (props.theme.isDarkMode ? '#1a1a1a' : '#db1568')};
-    color: ${props => (props.theme.isDarkMode ? '#db1568' : '#000000')};
+    background-color: ${props => (props.theme.isDarkMode ? '#1a1a1a' : '#f69cc1')};
+    color: ${props => (props.theme.isDarkMode ? '#f69cc1' : '#000000')};
     /* Add any other global styles you want to change based on the theme */
   }
 `;
