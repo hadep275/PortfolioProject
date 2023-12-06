@@ -1,37 +1,37 @@
+/* src/Navigation.css */
 .nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: transparent;
-    color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-  }
-  
-  .menu-toggle {
-    display: none;
-    cursor: pointer;
-  }
-  
-  .menu-toggle.open .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-  
-  .menu-toggle.open .bar:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .menu-toggle.open .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: transparent;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
 
-  @media (max-width: 768px) {
-    .menu-toggle {
-      display: block;
-    }
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-toggle.open .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.open .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
   }
 
   ul {
@@ -39,13 +39,13 @@
     padding: 0;
     margin: 0;
     display: flex;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out; 
   }
-  
+
   li {
     margin: 0 15px;
-    opacity: 1;
-    transform: translateY(2px);
+    opacity: 0;
+    transform: translateY(20px);
     transition: opacity 0.5s ease, transform 0.5s ease;
   }
 
@@ -53,16 +53,46 @@
     opacity: 1;
     transform: translateY(0);
   }
-  
-  a {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
+
+  li:nth-child(1) {
+    transition-delay: 0.1s;
   }
-  
-  a:hover {
-    color: #61dafb;
+
+  li:nth-child(2) {
+    transition-delay: 0.2s;
   }
-  
-  
+
+  li:nth-child(3) {
+    transition-delay: 0.3s;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+li {
+  margin: 0 15px;
+  opacity: 1;
+  transform: translateY(2px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+li.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #61dafb;
+}

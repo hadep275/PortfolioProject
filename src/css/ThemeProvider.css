@@ -1,0 +1,38 @@
+/* Example CSS for ThemeToggle.jsx */
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    /* color: #000000; */
+    color: ${props => props.theme.isDarkMode ? '#ffffff' : '#000000'};
+    transition: color 0.3s ease;
+  }
+  
+  button:hover {
+    color: #61dafb; /* Highlight color on hover, adjust as needed */
+  }
+  
+  /* Add styles for the FontAwesome icons */
+  svg {
+    margin-right: 5px; /* Adjust spacing between icon and text */
+  }
+  
+  /* Additional styles for a more sophisticated appearance */
+  button {
+    border: 2px solid #61dafb;
+    border-radius: 20px;
+    padding: 8px 16px;
+    /* background-color: #fff; */
+    background-color: ${props => props.theme.isDarkMode ? '#333' : '#fff'};
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  button:hover {
+    background-color: #61dafb; /* Highlight background on hover, adjust as needed */
+    color: #ffffff;
+  }
+  

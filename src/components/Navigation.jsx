@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Link } from 'react-scroll';
+import ThemeToggle from './ThemeToggle';
 import '../css/Navigation.css';
 
 const Navigation = () => {
@@ -7,6 +9,7 @@ const Navigation = () => {
   const toggleNav = () => {
     setNavOpen(!isNavOpen);
   };
+  
 
   return (
     <nav className={`nav ${isNavOpen ? 'open' : ''}`}>
@@ -16,10 +19,24 @@ const Navigation = () => {
         <div className="bar"></div>
       </div>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <li>
+          <Link to="about" smooth={true} duration={500} onClick={toggleNav}>
+            About
+          </Link>
+        </li>
+        <li>
+          <Link to="projects" smooth={true} duration={500} onClick={toggleNav}>
+            Projects
+          </Link>
+        </li>
+        <li>
+          <Link to="contact" smooth={true} duration={500} onClick={toggleNav}>
+            Contact
+          </Link>
+        </li>
       </ul>
+      <ThemeToggle/>
+
     </nav>
   );
 };

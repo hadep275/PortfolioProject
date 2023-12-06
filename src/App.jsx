@@ -6,10 +6,13 @@ import Projects from '../Src/components/Projects';
 import Contact from '../Src/components/Contact';
 import Navigation from './components/Navigation';
 
+
 function App() {
+
+
   return (
     <div className="app">
-      <Navigation/>
+      <Navigation/> 
       <Header />
       <main>
         <About />
