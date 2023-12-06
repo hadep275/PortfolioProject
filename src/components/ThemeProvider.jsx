@@ -1,4 +1,13 @@
 import React, { createContext, useState, useContext, useEffect } from 'react';
+import { createGlobalStyle, ThemeProvider as StyledThemeProvider } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    background-color: ${props => (props.theme.isDarkMode ? '#1a1a1a' : '#ffffff')};
+    color: ${props => (props.theme.isDarkMode ? '#ffffff' : '#000000')};
+    /* Add any other global styles you want to change based on the theme */
+  }
+`;
 
 const ThemeContext = createContext();
 
@@ -26,7 +35,10 @@ const ThemeProvider = ({ children }) => {
 
   return (
     <ThemeContext.Provider value={{ isDarkMode, toggleDarkMode }}>
+      <StyledThemeProvider theme={{ isDarkMode }}>
+        <GlobalStyle />
       {children}
+      </StyledThemeProvider>
     </ThemeContext.Provider>
   );
 };
