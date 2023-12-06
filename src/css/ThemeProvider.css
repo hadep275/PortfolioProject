@@ -8,8 +8,8 @@ button {
     align-items: center;
     font-size: 16px;
     /* color: #000000; */
-    color: ${props => props.theme.isDarkMode ? '#ffffff' : '#000000'};
     transition: color 0.3s ease;
+    color: ${props => props.theme.isDarkMode ? '#ffffff' : '#000000'};
   }
   
   button:hover {
@@ -27,8 +27,8 @@ button {
     border-radius: 20px;
     padding: 8px 16px;
     /* background-color: #fff; */
-    background-color: ${props => props.theme.isDarkMode ? '#333' : '#fff'};
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: ${props => props.theme.isDarkMode ? '#333' : '#fff'};
   }
   
   button:hover {
