@@ -37,9 +37,9 @@ const Navigation = () => {
   return (
     <nav className={`nav ${isNavOpen ? 'open' : ''}`}>
       <div className="menu-toggle" onClick={toggleNav}>
-      <FontAwesomeIcon icon={isNavOpen ? faTimes : faBars} />
+      <FontAwesomeIcon icon={isNavOpen ? faBars : faTimes } />
       </div>
-      <ul className={isNavOpen ? 'show' : ''}>
+      <ul className={isNavOpen ? '' : 'show'}>
       <li>
           <Link to="about" smooth={true} duration={500} onClick={isSmallScreen ? closeNav : undefined}>
             About
