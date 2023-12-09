@@ -18,15 +18,7 @@ const Navigation = () => {
     setNavOpen(false);
   };
 
-  useEffect(() => {
-    // Add a class to trigger the transition animation
-    document.body.classList.add('nav-transition');
-
-    // Clean up the added class on component unmount
-    return () => {
-      document.body.classList.remove('nav-transition');
-    };
-  }, []);
+  
   
   useEffect(() => {
     const handleResize = () => {
