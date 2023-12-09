@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="app">
       <Navigation/> 
-      <Header />
+      {/* <Header /> */}
       <main>
         <About />
         <Projects />

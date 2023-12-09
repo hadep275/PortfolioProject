@@ -11,15 +11,15 @@ button {
   }
   
   button:hover {
-    color: #61dafb; /* Highlight color on hover, adjust as needed */
+    color: #61dafb; /* Highlight color on hover */
   }
   
-  /* Add styles for the FontAwesome icons */
+  /* FontAwesome icons */
   svg {
-    margin-right: 5px; /* Adjust spacing between icon and text */
+    margin-right: 5px; /* icon and text spacing */
   }
   
-  /* Additional styles for a more sophisticated appearance */
+  /* Button Border */
   button {
     border: 2px solid #61dafb;
     border-radius: 20px;
@@ -29,7 +29,7 @@ button {
   }
   
   button:hover {
-    background-color: #61dafb; /* Highlight background on hover, adjust as needed */
+    background-color: #61dafb; /* Highlight background on hover */
     color: #ffffff;
   }
   
