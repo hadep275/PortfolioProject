@@ -18,6 +18,15 @@ const Navigation = () => {
     setNavOpen(false);
   };
 
+  useEffect(() => {
+    // Add a class to trigger the transition animation
+    document.body.classList.add('nav-transition');
+
+    // Clean up the added class on component unmount
+    return () => {
+      document.body.classList.remove('nav-transition');
+    };
+  }, []);
   
   useEffect(() => {
     const handleResize = () => {
@@ -35,13 +44,13 @@ const Navigation = () => {
   }, []);
 
   return (
-    <nav className={`nav ${isNavOpen ? 'open' : ''}`}>
+    <nav className={`nav ${isNavOpen ? '' : 'open'}`}>
       <div className="menu-toggle" onClick={toggleNav}>
       <FontAwesomeIcon 
-      icon={isNavOpen ? faBars : faTimes }
+      icon={isNavOpen ? faTimes : faBars }
       className={`fa-flip-${isNavOpen ? 'horizontal' : 'vertical'}`} />
       </div>
-      <ul className={isNavOpen ? '' : 'show'}>
+      <ul className={isNavOpen ? 'show' : ''}>
       <li>
           <Link to="about" smooth={true} duration={500} onClick={isSmallScreen ? closeNav : undefined}>
             About
