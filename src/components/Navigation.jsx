@@ -37,7 +37,10 @@ const Navigation = () => {
   return (
     <nav className={`nav ${isNavOpen ? 'open' : ''}`}>
       <div className="menu-toggle" onClick={toggleNav}>
-      <FontAwesomeIcon icon={isNavOpen ? faBars : faTimes } />
+      <FontAwesomeIcon 
+      icon={isNavOpen ? faBars : faTimes }
+      className={`fa-flip-${isNavOpen ? 'horizontal' : 'vertical'}`}
+       />
       </div>
       <ul className={isNavOpen ? '' : 'show'}>
       <li>
