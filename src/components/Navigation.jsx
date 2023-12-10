@@ -22,7 +22,7 @@ const Navigation = () => {
   
   useEffect(() => {
     const handleResize = () => {
-      setIsSmallScreen(window.innerWidth <= 568);
+      setIsSmallScreen(window.innerWidth <= 768);
     };
 
     // Set initial screen size
@@ -36,16 +36,21 @@ const Navigation = () => {
   }, []);
 
   return (
-    <nav className={`nav ${isNavOpen ? '' : 'open'}`}>
+    <nav className={`nav ${isNavOpen ? 'open' : ''}`}>
       <div className="menu-toggle" onClick={toggleNav}>
       <FontAwesomeIcon 
-      icon={isNavOpen ? faTimes : faBars }
+      icon={isNavOpen ? faBars :faTimes  }
       className={`fa-flip-${isNavOpen ? 'horizontal' : 'vertical'}`} />
       </div>
-      <ul className={isNavOpen ? 'show' : ''}>
+      <ul className={isNavOpen ? '' : 'show'}>
       <li>
           <Link to="about" smooth={true} duration={500} onClick={isSmallScreen ? closeNav : undefined}>
             About
+          </Link>
+        </li>
+        <li>
+          <Link to="skills" smooth={true} duration={500} onClick={isSmallScreen ? closeNav : undefined}>
+            Skills
           </Link>
         </li>
         <li>
@@ -56,6 +61,12 @@ const Navigation = () => {
         <li>
           <Link to="contact" smooth={true} duration={500} onClick={isSmallScreen ? closeNav : undefined}>
             Contact
+          </Link>
+        </li>
+        
+        <li>
+          <Link to="blog" smooth={true} duration={500} onClick={isSmallScreen ? closeNav : undefined}>
+            Blog
           </Link>
         </li>
       </ul>

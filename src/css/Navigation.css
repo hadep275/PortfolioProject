@@ -98,7 +98,7 @@ a:hover {
   transition: transform 0.5s ease-in-out;
 }
 
-@media (max-width: 568px) {
+@media (max-width: 768px) {
   .menu-toggle {
     display: block;
     cursor: pointer;
@@ -125,6 +125,12 @@ a:hover {
 
   .nav.open ul {
     display: none;
+  }
+
+  .nav:hover {
+    transform: scale(0.98);
+    border-radius: 6px;
+    transition: transform 0.4s ease-in-out;
   }
 
   li {

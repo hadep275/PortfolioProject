@@ -5,6 +5,8 @@ import About from '../Src/components/About';
 import Projects from '../Src/components/Projects';
 import Contact from '../Src/components/Contact';
 import Navigation from './components/Navigation';
+import Skills from '../Src/components/Skills';
+import Blog from '../Src/components/Blog';
 
 
 function App() {
@@ -16,8 +18,10 @@ function App() {
       {/* <Header /> */}
       <main>
         <About />
+        <Skills/>
         <Projects />
         <Contact />
+        <Blog/>
       </main>
     </div>
   );
