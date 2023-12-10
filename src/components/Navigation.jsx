@@ -25,13 +25,10 @@ const Navigation = () => {
       setIsSmallScreen(window.innerWidth <= 768);
     };
 
-    // Set initial screen size
     handleResize();
 
-    // Listen for window resize events
     window.addEventListener('resize', handleResize);
 
-    // Cleanup event listener on component unmount
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
