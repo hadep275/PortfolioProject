@@ -13,14 +13,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.1",
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "p5": "^1.9.0",
+    "range-touch": "^1.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scroll": "^1.9.0",
-    "styled-components": "^6.1.1"
+    "react-spring": "^9.7.3",
+    "react-three-fiber": "^6.0.13",
+    "simplex-noise": "^4.0.1",
+    "styled-components": "^6.1.1",
+    "three": "^0.159.0",
+    "update": "^0.7.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.37",
