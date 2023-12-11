@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-scroll';
+import { Link as ScrollLink, Element } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import ThemeToggle from './ThemeToggle';
@@ -10,7 +10,7 @@ const Navigation = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   const toggleNav = () => {
-    console.log('Toggle nav called');
+    // console.log('Toggle nav called');
     setNavOpen(!isNavOpen);
   };
 
@@ -32,6 +32,14 @@ const Navigation = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+
+  const handleNavLinkClick = () => {
+    if (isSmallScreen) {
+      closeNav();
+    }
+  };
+   
+
   return (
     <nav className={`nav ${isNavOpen ? 'open' : ''}`}>
       <div className="menu-toggle" onClick={toggleNav}>
@@ -41,30 +49,29 @@ const Navigation = () => {
       </div>
       <ul className={isNavOpen ? '' : 'show'}>
       <li>
-          <Link to="about" smooth={true} duration={500} onClick={isSmallScreen ? closeNav : undefined}>
+          <ScrollLink to="about" smooth={true} duration={500} onClick={handleNavLinkClick}>
             About
-          </Link>
+          </ScrollLink>
         </li>
         <li>
-          <Link to="skills" smooth={true} duration={500} onClick={isSmallScreen ? closeNav : undefined}>
+          <ScrollLink to="skills" smooth={true} duration={500} onClick={handleNavLinkClick}>
             Skills
-          </Link>
+          </ScrollLink>
         </li>
         <li>
-          <Link to="projects" smooth={true} duration={500} onClick={isSmallScreen ? closeNav : undefined}>
+          <ScrollLink to="projects" smooth={true} duration={500} onClick={handleNavLinkClick}>
             Projects
-          </Link>
+          </ScrollLink>
         </li>
         <li>
-          <Link to="contact" smooth={true} duration={500} onClick={isSmallScreen ? closeNav : undefined}>
+          <ScrollLink to="contact" smooth={true} duration={500} onClick={handleNavLinkClick}>
             Contact
-          </Link>
+          </ScrollLink>
         </li>
-        
         <li>
-          <Link to="blog" smooth={true} duration={500} onClick={isSmallScreen ? closeNav : undefined}>
+          <ScrollLink to="blog" smooth={true} duration={500} onClick={handleNavLinkClick}>
             Blog
-          </Link>
+          </ScrollLink>
         </li>
       </ul>
       <ThemeToggle/>

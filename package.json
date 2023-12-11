@@ -22,10 +22,8 @@
     "react-dom": "^18.2.0",
     "react-scroll": "^1.9.0",
     "react-spring": "^9.7.3",
-    "react-three-fiber": "^6.0.13",
     "simplex-noise": "^4.0.1",
     "styled-components": "^6.1.1",
-    "three": "^0.159.0",
     "update": "^0.7.4"
   },
   "devDependencies": {
