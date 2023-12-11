@@ -13,7 +13,9 @@ const AnimatedBubble = () => {
   });
 
   return (
-    <animated.div className="animated-bubble" style={props}>
+    <animated.div className="animated-bubble" 
+    // style={props}
+    >
       <p><br></br>Hikmah Adepoju</p>
       <div className="wave" />
     </animated.div>

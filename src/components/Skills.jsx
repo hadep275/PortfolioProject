@@ -1,11 +1,10 @@
-import React, {useState, useEffect} from 'react';
+import React, { useEffect, useState } from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import { Link as ScrollLink, Element } from 'react-scroll';
+
+import { Element } from 'react-scroll';
 import '../css/Skills.css';
 
-
 const Skills = () => {
-
   const [animated, setAnimated] = useState(false);
 
   useEffect(() => {
@@ -29,61 +28,50 @@ const Skills = () => {
   }, [animated]);
 
   return (
-    <section id="skills"  className={`skills ${animated ? 'slide-in' : ''}`}>
-      <h2>Skills</h2>
-      <div className="skill-container">
-        <div className="skill">
-          <i className="fab fa-html5"></i>
-          <span>HTML/CSS</span>
+    <Element name="skills">
+      <section className="skills">
+        <h2>Skills</h2>
+        <div className="skill-container">
+          {skills.map((skill, index) => (
+            <div key={index} className="skill" style={{ animationDelay: `${index * 0.1}s` }}>
+              <i className={iconClassNames[index]}></i>
+              <span>{skill}</span>
+            </div>
+          ))}
         </div>
-        <div className="skill">
-          <i className="fab fa-js"></i>
-          <span>JavaScript</span>
-        </div>
-        <div className="skill">
-          <i className="fab fa-react"></i>
-          <span>React.js</span>
-        </div>
-        <div className="skill">
-          <i className="fab fa-google"></i>
-          <span>Google Cloud Services</span>
-        </div>
-        <div className="skill">
-          <i className="fas fa-tools"></i>
-          <span>Agile Methodologies</span>
-        </div>
-        <div className="skill">
-          <i className="fas fa-chart-bar"></i>
-          <span>Cognos</span>
-        </div>
-        <div className="skill">
-          <i className="fab fa-figma"></i>
-          <span>Figma</span>
-        </div>
-        <div className="skill">
-          <i className="fab fa-microsoft"></i>
-          <span>Azure</span>
-        </div>
-        <div className="skill">
-          <i className="fab fa-git"></i>
-          <span>Git</span>
-        </div>
-        <div className="skill">
-          <i className="fab fa-node"></i>
-          <span>Node.js</span>
-        </div>
-        <div className="skill">
-          <i className="fas fa-database"></i>
-          <span>MongoDB</span>
-        </div>
-        <div className="skill">
-          <i className="fab fa-node"></i>
-          <span>Express.js</span>
-        </div>
-        {/* Add more skills with icons as needed */}
-      </div>
-    </section>
+      </section>
+    </Element>
   );
-}
+};
+
+const skills = [
+  'HTML/CSS',
+  'JavaScript',
+  'React.js',
+  'Google Cloud Services',
+  'Agile Methodologies',
+  'Cognos',
+  'Figma',
+  'Azure',
+  'Git',
+  'Express.js',
+  'MongoDB',
+  'Node.js',
+];
+
+const iconClassNames = [
+  'fab fa-html5',
+  'fab fa-js',
+  'fab fa-react',
+  'fab fa-google',
+  'fas fa-tools',
+  'fas fa-chart-bar',
+  'fab fa-figma',
+  'fab fa-microsoft',
+  'fab fa-git',
+  'fab fa-node',
+  'fas fa-database',
+  'fab fa-node',
+];
 
 export default Skills;
