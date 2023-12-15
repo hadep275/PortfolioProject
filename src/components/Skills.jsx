@@ -11,6 +11,7 @@ const Skills = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
+      anchorPlacement: 'top-bottom',
     });
     AOS.refresh();
   }, []);

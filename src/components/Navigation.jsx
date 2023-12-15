@@ -59,7 +59,7 @@ const Navigation = () => {
           </ScrollLink>
         </li>
         <li>
-          <ScrollLink to="skills" smooth={true} duration={500} onClick={handleNavLinkClick} activeClass="active">
+          <ScrollLink to="skills" smooth={true} duration={500} onClick={handleNavLinkClick}>
             Skills
           </ScrollLink>
         </li>
@@ -73,11 +73,11 @@ const Navigation = () => {
             Contact
           </ScrollLink>
         </li>
-        <li>
+        {/* <li>
           <ScrollLink to="blog" smooth={true} duration={500} onClick={handleNavLinkClick}>
             Blog
           </ScrollLink>
-        </li>
+        </li> */}
       </ul>
       <ThemeToggle/>
 

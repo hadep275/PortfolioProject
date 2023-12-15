@@ -13,6 +13,11 @@ const ThemeContext = createContext();
 
 const ThemeProvider = ({ children }) => {
   const [isDarkMode, setDarkMode] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
 
   useEffect(() => {
     const storedTheme = localStorage.getItem('theme');
@@ -34,7 +39,7 @@ const ThemeProvider = ({ children }) => {
   };
 
   return (
-    <ThemeContext.Provider value={{ isDarkMode, toggleDarkMode }}>
+    <ThemeContext.Provider value={{ isDarkMode, toggleDarkMode, formData, setFormData }}>
       <StyledThemeProvider theme={{ isDarkMode }}>
         <GlobalStyle />
       {children}
