@@ -15,8 +15,8 @@ const projects = [
     title: 'Project 1',
     description: 'Description of Project 1.',
     image: project1Image,
-    githubLink: 'https://github.com/your-username/project1',
-    demoLink: 'https://demo.project1.com',
+    githubLink: 'https://github.com/hadep275/MortgageCalculator',
+    demoLink: 'https://hadep275.github.io/MortgageCalculator/',
   },
   {
     title: 'Project 2',
