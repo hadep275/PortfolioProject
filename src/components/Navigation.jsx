@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link as ScrollLink, Element } from 'react-scroll';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import ThemeToggle from './ThemeToggle';
@@ -18,7 +20,10 @@ const Navigation = () => {
     setNavOpen(false);
   };
 
-  
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+    });})
   
   useEffect(() => {
     const handleResize = () => {
@@ -54,7 +59,7 @@ const Navigation = () => {
           </ScrollLink>
         </li>
         <li>
-          <ScrollLink to="skills" smooth={true} duration={500} onClick={handleNavLinkClick}>
+          <ScrollLink to="skills" smooth={true} duration={500} onClick={handleNavLinkClick} activeClass="active">
             Skills
           </ScrollLink>
         </li>

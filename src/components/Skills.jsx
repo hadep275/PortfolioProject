@@ -1,10 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { Element } from 'react-scroll';
 import '../css/Skills.css';
 
 const Skills = () => {
   const [animated, setAnimated] = useState(false);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,9 +36,9 @@ const Skills = () => {
 
   return (
     <Element name="skills">
-      <section className="skills">
-        <h2>Skills</h2>
-        <div className="skill-container">
+      <section className={`skills ${animated ? 'slide-in' : ''}`} data-aos="slide-in" >
+      <h2 data-aos="flip-left">Skills</h2>
+        <div className="skill-container" data-aos="fade-right">
           {skills.map((skill, index) => (
             <div key={index} className="skill" style={{ animationDelay: `${index * 0.1}s` }}>
               <i className={iconClassNames[index]}></i>
