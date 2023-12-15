@@ -1,12 +1,6 @@
 .project {
-    color: #1a1a1a; 
     padding: 60px 0;
     text-align: center;
-  }
-  
-  .dark-mode .project {
-    background-color: #500549; /* Dark mode background color */
-    color: #db1568; /* Dark mode text color */
   }
   
   .project h2 {
@@ -23,10 +17,10 @@
     width: 300px;
     margin: 20px;
     padding: 20px;
-    background-color: #fff;
+    /* background-color: #fff; */
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.01);
     transition: box-shadow 0.3s ease;
   }
   

@@ -32,7 +32,6 @@ const Project = () => {
             <p>Description of Project 2.</p>
           </div>
 
-          {/* Add more project items as needed */}
         </div>
       </section>
     </Element>
