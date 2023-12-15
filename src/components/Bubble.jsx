@@ -17,7 +17,8 @@ const AnimatedBubble = () => {
     // style={props}
     >
       <p><br></br>Hikmah Adepoju</p>
-      <div className="wave" />
+      <div className="wave" data-aos="fade-up"
+     data-aos-duration="3000"/>
     </animated.div>
   );
 };

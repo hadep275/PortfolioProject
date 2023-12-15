@@ -1,6 +1,7 @@
 .project {
     padding: 60px 0;
     text-align: center;
+    margin-bottom: 500px;
   }
   
   .project h2 {
@@ -10,6 +11,8 @@
   .project-container {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 20px;
+    align-items: center;
     justify-content: space-around;
   }
   
@@ -28,3 +31,9 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
   
+  img {
+    max-width: 100%;
+    height: auto; 
+    border-radius: 8px; 
+    margin-bottom: 15px;
+  }
