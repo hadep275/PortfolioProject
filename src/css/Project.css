@@ -1,7 +1,7 @@
 .project {
     padding: 60px 0;
     text-align: center;
-    margin-bottom: 500px;
+    height: fit-content;
   }
   
   .project h2 {

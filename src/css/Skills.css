@@ -1,5 +1,6 @@
 .skills {
   text-align: center;
+  height: fit-content;
   padding: 40px 0px 50px 0px;
 }
 
@@ -14,15 +15,6 @@
   /* opacity: 1; */
   margin-top: 20px;
 }
-
-@media (min-width: 900px) and (orientation: landscape){
-  .skill-container{
-    max-width: 650px;
-    align-content: center;
-    padding-left: 420px;
-    justify-content: center;
-  }}
-
 
 .skill {
   display: flex;
