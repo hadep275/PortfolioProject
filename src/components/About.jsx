@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import Bubble from './Bubble';
+import { useTheme } from './ThemeProvider';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { FaGithub, FaLinkedin, FaFilePdf } from 'react-icons/fa';
@@ -22,9 +22,8 @@ const About = () => {
     <section id="about" className="about-me">
       <h2 data-aos="zoom-out-right" data-aos-duration="3000">Hikmah Adepoju</h2>
       <div className="about-me-container">
-          <div className="logo-container">
-            <img src={logoR} alt="Logo" />
-      {/* <Bubble data-aos="zoom-out-right"/> */}
+          <div className="logo-container-img">
+            <img src={logoR} alt="Logo-img" />
           </div>
       <div className="about-container">
       <p data-aos="fade-up">
