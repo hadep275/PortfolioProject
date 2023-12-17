@@ -3,11 +3,11 @@ import { createGlobalStyle, ThemeProvider as StyledThemeProvider } from 'styled-
 
 const GlobalStyle = createGlobalStyle`
   body {
-    background-color: ${props => (props.theme.isDarkMode ? '#1a1a1a' : '#f69cc1')};
+    background-color: ${props => (props.theme.isDarkMode ? '#1a1a1a' : '#f69')};
     color: ${props => (props.theme.isDarkMode ? '#f69cc1' : '#000000')};
   }
   h2{
-    color: ${props => (props.theme.isDarkMode ? ' #bde8f4 ' : '#f12889')};
+    color: ${props => (props.theme.isDarkMode ? ' #f69 ' : '#fff')};
   }
 `;
 
