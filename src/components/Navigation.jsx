@@ -5,6 +5,7 @@ import 'aos/dist/aos.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import ThemeToggle from './ThemeToggle';
+import logoR from '../assets/img/logoR.png';
 import '../css/Navigation.css';
 
 const Navigation = () => {
@@ -51,6 +52,9 @@ const Navigation = () => {
       <FontAwesomeIcon 
       icon={isNavOpen ? faBars :faTimes  }
       className={`fa-flip-${isNavOpen ? 'horizontal' : 'vertical'}`} />
+      </div>
+      <div className="logo-container-nav">
+            <img src={logoR} alt="Logo" />
       </div>
       <ul className={isNavOpen ? '' : 'show'}>
       <li>

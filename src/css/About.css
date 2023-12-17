@@ -1,10 +1,8 @@
-about{
-    height: fit-content;
-}
-
 .about-me {
-    padding: 80px 0; /* Adjust the padding as needed */
+    padding: 80px 0px;
     text-align: center;
+    height: fit-content;
+    width: fit-content;
   }
   
   .about-me-container {
@@ -22,7 +20,7 @@ about{
   .logo-container img {
     max-width: 100%;
     height: auto;
-  border-radius: 50%;
+    border-radius: 50%;
   }
   
   .text-container {
@@ -31,28 +29,28 @@ about{
   
   h2 {
     font-size: 2.5rem;
-    margin-bottom: 20px; /* Adjust the margin as needed */
+    margin-bottom: 20px; 
   }
   
   p {
     font-size: 1.2rem;
     line-height: 1.6;
-    margin-bottom: 15px; /* Adjust the margin as needed */
+    margin-bottom: 15px; 
   }
   
   .social-icons {
     display: flex;
     justify-content: center;
-    margin-top: 20px; /* Adjust the margin as needed */
+    margin-top: 20px; 
+    padding: 20px;
   }
   
   .social-icons a {
-    color: #333; /* Adjust the color as needed */
-    margin: 0 10px; /* Adjust the margin as needed */
+    margin: 0 10px; 
     transition: color 0.3s ease;
   }
   
   .social-icons a:hover {
-    color: #007bff; /* Adjust the hover color as needed */
+    color: #61dafb; 
   }
   

@@ -7,6 +7,7 @@ import Contact from '../Src/components/Contact';
 import Navigation from './components/Navigation';
 import Skills from '../Src/components/Skills';
 import Blog from '../Src/components/Blog';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Contact />
         {/* <Blog/> */}
       </main>
+      <Footer/>
     </div>
   );
 }
