@@ -10,7 +10,25 @@ const GlobalStyle = createGlobalStyle`
     color: ${props => (props.theme.isDarkMode ? ' #f69 ' : '#fff')};
   }
   .project-item{
-    background-color: ${props => (props.theme.isDarkMode ? ' #fff ' : '#f9ccf4')};
+    background-color: ${props => (props.theme.isDarkMode ? ' #000 ' : '#b31e50')};
+    box-shadow: ${props => (props.theme.isDarkMode ? ' 0 0 20px rgba(0, 0, 0, 0.9) ' : '0 0 20px rgba(0, 0, 0, 0.6)')};
+    a{
+      color: ${props => (props.theme.isDarkMode ? ' #f69 ' : '#000')};
+    }}
+  .project-item:hover {
+    background-color: ${props => (props.theme.isDarkMode ? ' #fff ' : '#002')};
+    color: ${props => (props.theme.isDarkMode ? ' #000 ' : '#fff')};
+    box-shadow: ${props => (props.theme.isDarkMode ? ' 0 0 20px rgba(0, 0, 0, 0.9) ' : '0 0 20px rgba(0, 0, 0, 0.6)')};
+  a{
+    color: ${props => (props.theme.isDarkMode ? ' #f69 ' : '#fff')};
+  }
+  a: hover{
+    color: ${props => (props.theme.isDarkMode ? ' magenta ' : 'blue')};
+  }
+}
+
+  a: hover{
+    color: ${props => (props.theme.isDarkMode ? ' turquoise ' : '#000')};
   }
 `;
 
