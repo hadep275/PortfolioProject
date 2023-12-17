@@ -12,32 +12,32 @@ import '../css/Project.css';
 
 const projects = [
   {
-    title: 'Project 1',
-    description: 'Description of Project 1.',
+    title: 'Mortgage Calculator',
+    // description: 'Description of Project 1.',
     image: project1Image,
     githubLink: 'https://github.com/hadep275/MortgageCalculator',
     demoLink: 'https://hadep275.github.io/MortgageCalculator/',
   },
   {
-    title: 'Project 2',
-    description: 'Description of Project 2.',
+    title: 'Every Child Plays',
+    // description: 'Description of Project 2.',
     image: project2Image,
-    githubLink: 'https://github.com/your-username/project1',
+    githubLink: 'https://github.com/hadep275/everychildplays',
     demoLink: 'https://demo.project1.com',
   },
   {
-    title: 'Project 3',
-    description: 'Description of Project 3.',
+    title: 'Indeygo',
+    // description: 'Description of Project 3.',
     image: project3Image,
-    githubLink: 'https://github.com/your-username/project1',
+    githubLink: 'https://github.com/hadep275/indeygo',
     demoLink: 'https://demo.project1.com',
   },
   {
-    title: 'Project 4',
-    description: 'Description of Project 4.',
+    title: 'Contractor Database',
+    // description: 'Description of Project 4.',
     image: project4Image,
-    githubLink: 'https://github.com/your-username/project1',
-    demoLink: 'https://demo.project1.com',
+    githubLink: 'https://github.com/new-idea-machine/os-contractor-database-system',
+    demoLink: 'https://test.skape.space/',
   },
 ];
 

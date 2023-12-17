@@ -9,6 +9,9 @@ const GlobalStyle = createGlobalStyle`
   h2{
     color: ${props => (props.theme.isDarkMode ? ' #f69 ' : '#fff')};
   }
+  .project-item{
+    background-color: ${props => (props.theme.isDarkMode ? ' #fff ' : '#f9ccf4')};
+  }
 `;
 
 const ThemeContext = createContext();
