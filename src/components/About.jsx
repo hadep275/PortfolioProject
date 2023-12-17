@@ -22,8 +22,8 @@ const About = () => {
     <section id="about" className="about-me">
       <h2 data-aos="zoom-out-right" data-aos-duration="3000">Hikmah Adepoju</h2>
       <div className="about-me-container">
-          <div className="logo-container-img">
-            <img src={logoR} alt="Logo-img" />
+          <div className="avatar-container-img">
+            <img src={logoR} alt="avatar" />
           </div>
       <div className="about-container">
       <p data-aos="fade-up">

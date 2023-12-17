@@ -18,7 +18,7 @@ const Navigation = () => {
   };
 
   const closeNav = () => {
-    setNavOpen(false);
+    setNavOpen(true);
   };
 
   useEffect(() => {

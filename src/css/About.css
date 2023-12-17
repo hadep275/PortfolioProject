@@ -1,4 +1,4 @@
-.about-me {
+/* .about-me {
     padding: 80px 160px;
     text-align: center;
     height: fit-content;
@@ -7,19 +7,18 @@
   
   .about-me-container {
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
   }
   
-  .logo-container-img {
+  .avatar-container-img {
     margin-right: 100px;
     padding-left: 100px;
   }
   
-  .logo-container-img img {
+  .avatar-container-img img {
     max-width: 100%;
     height: auto;
     border-radius: 50%;
@@ -56,15 +55,14 @@
     color: #61dafb; 
   }
   
-  /* Responsive Styles */
   @media (min-width: 890px) {
 
-    .logo-container-img {
+    .avatar-container-img {
       margin-right: 50px;
       padding-left: 50px;
     }
     
-    .logo-container-img img {
+    .avatar-container-img img {
       max-width: 100%;
       height: auto;
       border-radius: 50%;
@@ -72,15 +70,10 @@
 
   }
   
-  @media (max-width: 790px) { 
+  @media (max-width: 890px) { 
     
     .about-me-container {
-      display: flex;
       flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      max-width: 1200px;
-      margin: 0 auto;
     }
 
-  }
+  } */
