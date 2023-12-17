@@ -825,7 +825,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     color: ${e=>e.theme.isDarkMode?" #000 ":"#fff"};
     box-shadow: ${e=>e.theme.isDarkMode?" 0 0 20px rgba(0, 0, 0, 0.9) ":"0 0 20px rgba(0, 0, 0, 0.6)"};
   a{
-    color: ${e=>e.theme.isDarkMode?" #f69 ":"#fff"};
+    color: ${e=>e.theme.isDarkMode?" #000 ":"#fff"};
   }
   a: hover{
     color: ${e=>e.theme.isDarkMode?" magenta ":"blue"};
