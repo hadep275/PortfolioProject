@@ -7,8 +7,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${props => (props.theme.isDarkMode ? '#f69cc1' : '#000000')};
   }
   h2{
-    color: ${props => (props.theme.isDarkMode ? '#61dafb' : '#fff')};
-
+    color: ${props => (props.theme.isDarkMode ? ' #bde8f4 ' : '#f12889')};
   }
 `;
 
