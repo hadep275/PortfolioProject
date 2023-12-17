@@ -53,6 +53,7 @@ const Navigation = () => {
       icon={isNavOpen ? faBars :faTimes  }
       className={`fa-flip-${isNavOpen ? 'horizontal' : 'vertical'}`} />
       </div>
+      
       <div className="logo-container-nav">
             <img src={logoR} alt="Logo" />
       </div>
