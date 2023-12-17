@@ -47,17 +47,17 @@ const Navigation = () => {
    
 
   return (
-    <nav className={`nav ${isNavOpen ? 'open' : ''}`}>
+    <nav className={`nav ${isNavOpen ? '' : 'open'}`}>
       <div className="menu-toggle" onClick={toggleNav}>
       <FontAwesomeIcon 
-      icon={isNavOpen ? faBars :faTimes  }
+      icon={isNavOpen ?  faTimes: faBars }
       className={`fa-flip-${isNavOpen ? 'horizontal' : 'vertical'}`} />
       </div>
       
       <div className="logo-container-nav">
             <img src={logoR} alt="Logo" />
       </div>
-      <ul className={isNavOpen ? '' : 'show'}>
+      <ul className={isNavOpen ? 'show' : ''}>
       <li>
           <ScrollLink to="about" smooth={true} duration={500} onClick={handleNavLinkClick}>
             About
