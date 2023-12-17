@@ -40,7 +40,7 @@ const Skills = () => {
     <Element name="skills">
       <section className={`skills ${animated ? 'slide-in' : ''}`} data-aos="slide-up" >
       <h2 data-aos="flip-left">Skills</h2>
-        <div className="skill-container" data-aos="zoom-out-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <div className="skill-container" data-aos="zoom-out-right" data-aos-offset="500" data-aos-easing="ease-in-sine">
           {skills.map((skill, index) => (
             <div key={index} className="skill" style={{ animationDelay: `${index * 0.1}s` }}>
               <i className={iconClassNames[index]}></i>

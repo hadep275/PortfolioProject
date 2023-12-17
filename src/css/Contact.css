@@ -1,6 +1,7 @@
 .contact {
     text-align: center;
     padding: 80px 0;
+    height: fit-content;
   }
   
   #contact-section h2 {

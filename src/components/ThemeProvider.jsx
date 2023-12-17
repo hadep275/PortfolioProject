@@ -5,7 +5,10 @@ const GlobalStyle = createGlobalStyle`
   body {
     background-color: ${props => (props.theme.isDarkMode ? '#1a1a1a' : '#f69cc1')};
     color: ${props => (props.theme.isDarkMode ? '#f69cc1' : '#000000')};
-    /* Add any other global styles you want to change based on the theme */
+  }
+  h2{
+    color: ${props => (props.theme.isDarkMode ? '#61dafb' : '#fff')};
+
   }
 `;
 
