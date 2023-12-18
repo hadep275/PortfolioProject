@@ -23,7 +23,7 @@ const About = () => {
       <h2 data-aos="zoom-out-right" data-aos-duration="3000">Hikmah Adepoju</h2>
       <div className="about-me-container">
           <div className="avatar-container-img">
-            <img src={logoR} alt="avatar" />
+            <img src={logoR} alt="avatar" data-aos="zoom-in-left" data-aos-duration="3000"/>
           </div>
       <div className="about-container">
       <p data-aos="fade-up">
