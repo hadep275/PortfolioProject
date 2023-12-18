@@ -1,5 +1,5 @@
-/* .about-me {
-    padding: 80px 160px;
+.about-me {
+    /* padding: 80px 160px; */
     text-align: center;
     height: fit-content;
     width: fit-content;
@@ -76,4 +76,4 @@
       flex-wrap: wrap;
     }
 
-  } */
+  }
