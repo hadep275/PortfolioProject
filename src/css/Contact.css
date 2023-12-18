@@ -32,7 +32,7 @@
   
   #contact-form input[type="text"],
   #contact-form input[type="email"],
-  #contact-form textarea {
+  #contact-form textarea[type="message"] {
     width: 100%;
     padding: 15px;
     margin-top: 10px;
