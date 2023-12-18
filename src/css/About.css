@@ -69,6 +69,20 @@
     }
 
   }
+  @media (min-width: 590px) {
+
+    .avatar-container-img {
+      margin-right: 30px;
+      padding-left: 30px;
+    }
+    
+    .avatar-container-img img {
+      max-width: 40%;
+      height: auto;
+      border-radius: 50%;
+    }
+
+  }
   
   @media (max-width: 890px) { 
     
