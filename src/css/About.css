@@ -58,7 +58,8 @@
   @media (min-width: 890px) {
 
     .avatar-container-img {
-      margin-right: 50px;
+      margin-right: 100px;
+      margin-left: 100px;
       padding-left: 50px;
     }
     
@@ -67,9 +68,11 @@
       height: auto;
       border-radius: 50%;
     }
-
+    .abouth2 {
+      margin-left: 300px; 
+    }
   }
-  @media (min-width: 590px) {
+  @media (max-width: 590px) {
 
     .avatar-container-img {
       margin-right: 30px;

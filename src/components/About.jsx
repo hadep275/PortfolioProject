@@ -20,7 +20,7 @@ const About = () => {
 
   return (
     <section id="about" className="about-me">
-      <h2 data-aos="zoom-out-right" data-aos-duration="3000">Hikmah Adepoju</h2>
+      <h2 className="abouth2" data-aos="zoom-out-right" data-aos-duration="3000">Hikmah Adepoju</h2>
       <div className="about-me-container">
           <div className="avatar-container-img">
             <img src={logoR} alt="avatar" data-aos="zoom-in-left" data-aos-duration="3000"/>
