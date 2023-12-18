@@ -35,7 +35,6 @@ const About = () => {
             <p data-aos="fade-up">
               I have a strong foundation in Business Administration, 
               holding a Bachelor of Business Administration from Mount Royal University. 
-              Additionally, I'm expanding my skill set by pursuing an intensive Full Stack Development program at InceptionU Ltd. 
             </p>
             <p data-aos="fade-up">
               My professional journey has included a role as a Financial Crime Specialist at Neo Financial, 
