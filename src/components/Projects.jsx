@@ -5,6 +5,7 @@ import { Element } from 'react-scroll';
 import { useTheme } from './ThemeProvider';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import project1Image from '../assets/img/project1.png';
+import palindromeImage from '../assets/img/palindrome.png';
 import project2Image from '../assets/img/project2.png';
 import project3Image from '../assets/img/project3.png';
 import project4Image from '../assets/img/project4.png'
@@ -17,6 +18,13 @@ const projects = [
     image: project1Image,
     githubLink: 'https://github.com/hadep275/MortgageCalculator',
     demoLink: 'https://hadep275.github.io/MortgageCalculator/',
+  },
+  {
+    title: 'Palindrome Checker',
+    // description: 'Description of Palindrome.',
+    image: palindromeImage,
+    githubLink: 'https://github.com/hadep275/Palindrome-Checker',
+    demoLink: 'https://hadep275.github.io/Palindrome-Checker/',
   },
   {
     title: 'Every Child Plays',
