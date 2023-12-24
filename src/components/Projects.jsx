@@ -5,10 +5,11 @@ import { Element } from 'react-scroll';
 import { useTheme } from './ThemeProvider';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import project1Image from '../assets/img/project1.png';
-import palindromeImage from '../assets/img/palindrome.png';
 import project2Image from '../assets/img/project2.png';
 import project3Image from '../assets/img/project3.png';
 import project4Image from '../assets/img/project4.png'
+import palindromeImage from '../assets/img/palindrome.png';
+import dragonImage from '../assets/img/dragon.png';
 import '../css/Project.css';
 
 const projects = [
@@ -25,6 +26,13 @@ const projects = [
     image: palindromeImage,
     githubLink: 'https://github.com/hadep275/Palindrome-Checker',
     demoLink: 'https://hadep275.github.io/Palindrome-Checker/',
+  },
+  {
+    title: 'Dragon Repeller',
+    // description: 'Description of Palindrome.',
+    image: dragonImage,
+    githubLink: 'https://github.com/hadep275/dragon-repeller',
+    demoLink: 'https://hadep275.github.io/dragon-repeller/',
   },
   {
     title: 'Every Child Plays',
