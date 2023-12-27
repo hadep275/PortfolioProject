@@ -9,6 +9,7 @@ import project2Image from '../assets/img/project2.png';
 import project3Image from '../assets/img/project3.png';
 import project4Image from '../assets/img/project4.png'
 import palindromeImage from '../assets/img/palindrome.png';
+import calorieCounterImage from '../assets/img/calorieCalorie.png';
 import dragonImage from '../assets/img/dragon.png';
 import '../css/Project.css';
 
@@ -19,6 +20,13 @@ const projects = [
     image: project1Image,
     githubLink: 'https://github.com/hadep275/MortgageCalculator',
     demoLink: 'https://hadep275.github.io/MortgageCalculator/',
+  },
+  {
+    title: 'Calorie Counter',
+    // description: 'Description of Palindrome.',
+    image: calorieCounterImage,
+    githubLink: 'https://github.com/hadep275/Calorie-Counter',
+    demoLink: 'https://hadep275.github.io/Calorie-Counter/',
   },
   {
     title: 'Palindrome Checker',
