@@ -9,7 +9,7 @@ import project2Image from '../assets/img/project2.png';
 import project3Image from '../assets/img/project3.png';
 import project4Image from '../assets/img/project4.png'
 import palindromeImage from '../assets/img/palindrome.png';
-import calorieCounterImage from '../assets/img/calorieCalorie.png';
+import calorieCounterImage from '../assets/img/calorieCounter.png';
 import dragonImage from '../assets/img/dragon.png';
 import '../css/Project.css';
 
