@@ -8,7 +8,7 @@ import '../css/Footer.css';
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer-text">© 2023 Hikmah Adepoju. All rights reserved.</div>
+      <div className="footer-text">© 2023 My Name. All rights reserved.</div>
       <div className="footer-icons">
         <a href="https://github.com/hadep275" target="_blank" rel="noopener noreferrer">
           <FaGithub />
